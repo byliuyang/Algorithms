@@ -24,6 +24,11 @@ Java implementation of fundamental algorithms and data structures in Algorithm 4
 	- Symbol Tables
 	- Binary Search Tree
 	- Red Black Tree
+	- Hash Table
+		- Separate Chaining
+
+# Acknowledgement
+Thanks to authors of Algorithm 4th Edition for providing standard algorithm implementations
 	
 # License
 
