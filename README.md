@@ -24,3 +24,7 @@ Java implementation of fundamental algorithms and data structures in Algorithm 4
 	- Symbol Tables
 	- Binary Search Tree
 	- Red Black Tree
+	
+# License
+
+This repository is maintained under MIT license
