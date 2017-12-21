@@ -1,5 +1,5 @@
 # Algorithms
-Java implementation of fundamental algorithms and data structures in Algoorithm 4th Edition
+Java implementation of fundamental algorithms and data structures in Algorithm 4th Edition
 
 ## Table of Content
 - Fundamentals
