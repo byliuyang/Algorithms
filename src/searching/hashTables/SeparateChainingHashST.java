@@ -1,5 +1,8 @@
 package searching.hashTables;
 
+import fundamentals.bagQueueStack.queue.Queue;
+import libs.StdIn;
+import libs.StdOut;
 import searching.symbolTables.SequentialSearchST;
 
 public class SeparateChainingHashST<Key, Value> {
@@ -38,8 +41,8 @@ public class SeparateChainingHashST<Key, Value> {
 
     private void resize(int chains) {
         SeparateChainingHashST<Key, Value> temp = new SeparateChainingHashST<>(chains);
-        for(int i = 0; i < M; i++) {
-            for(Key key: st[i].keys()) {
+        for (int i = 0; i < M; i++) {
+            for (Key key : st[i].keys()) {
                 temp.put(key, st[i].get(key));
             }
         }
@@ -55,10 +58,10 @@ public class SeparateChainingHashST<Key, Value> {
             return;
         }
 
-        if(N >= 10 * M) resize(2 * M);
+        if (N >= 10 * M) resize(2 * M);
 
         int i = hash(key);
-        if(!st[i].contains(key)) N++;
+        if (!st[i].contains(key)) N++;
         st[hash(key)].put(key, value);
     }
 
@@ -66,31 +69,33 @@ public class SeparateChainingHashST<Key, Value> {
         if (key == null) throw new IllegalArgumentException("argument to delete() is null");
 
         int i = hash(key);
-        if(st[i].contains(key)) N--;
+        if (st[i].contains(key)) N--;
         st[i].delete(key);
 
-        if(M > INIT_CAPACITY && N < 10 * M) resize(M / 2);
-      }
+        if (M > INIT_CAPACITY && N < 10 * M) resize(M / 2);
+    }
 
     public Value get(Key key) {
         if (key == null) throw new IllegalArgumentException("argument to get() is null");
         return st[hash(key)].get(key);
     }
 
-    public static void main(String[] args) {
-        SeparateChainingHashST<String, String> separateChainingHashST = new SeparateChainingHashST<>();
-        separateChainingHashST.put("a", "h");
-        separateChainingHashST.put("b", "i");
-        separateChainingHashST.put("c", "j");
-        separateChainingHashST.put("d", "k");
-        separateChainingHashST.put("e", "l");
-        separateChainingHashST.put("f", "m");
+    public Iterable<Key> keys() {
+        Queue<Key> queue = new Queue<>();
+        for (int i = 0; i < M; i++)
+            for (Key key : st[i].keys())
+                queue.enqueue(key);
+        return queue;
+    }
 
-        System.out.println( separateChainingHashST.get("a"));
-        System.out.println( separateChainingHashST.get("b"));
-        System.out.println( separateChainingHashST.get("c"));
-        System.out.println( separateChainingHashST.get("d"));
-        System.out.println( separateChainingHashST.get("e"));
-        System.out.println( separateChainingHashST.get("f"));
+    public static void main(String[] args) {
+        SeparateChainingHashST<String, Integer> st = new SeparateChainingHashST<>();
+        for (int i = 0; !StdIn.isEmpty(); i++) {
+            String key = StdIn.readString();
+            st.put(key, i);
+        }
+
+        for (String s : st.keys())
+            StdOut.printf("%s %d\n", s);
     }
 }

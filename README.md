@@ -26,6 +26,7 @@ Java implementation of fundamental algorithms and data structures in Algorithm 4
 	- Red Black Tree
 	- Hash Table
 		- Separate Chaining
+		- Linear Probing
 
 # Acknowledgement
 Thanks to authors of Algorithm 4th Edition for providing standard algorithm implementations
