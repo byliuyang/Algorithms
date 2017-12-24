@@ -1,4 +1,4 @@
-package graphs;
+package graphs.undirectedGraphs;
 
 import fundamentals.bagQueueStack.bag.Bag;
 import libs.In;

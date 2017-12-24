@@ -1,4 +1,4 @@
-package graphs;
+package graphs.undirectedGraphs;
 
 import libs.In;
 import libs.StdOut;
