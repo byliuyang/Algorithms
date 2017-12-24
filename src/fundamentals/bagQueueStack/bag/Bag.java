@@ -23,7 +23,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     @Override
     public Iterator<Item> iterator() {
-        return new ListIterator();
+        return new ListIterator(first);
     }
 
     private class Node {
@@ -34,6 +34,9 @@ public class Bag<Item> implements Iterable<Item> {
 
     private class ListIterator implements Iterator<Item> {
         private Node current;
+        public ListIterator(Node first) {
+            current = first;
+        }
 
         @Override
         public boolean hasNext() {
