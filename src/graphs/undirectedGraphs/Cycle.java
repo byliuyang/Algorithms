@@ -4,7 +4,7 @@ import libs.In;
 import libs.StdOut;
 
 /**
- * Cycle detection. Support this query: Is a given graph acylic?
+ * Cycle detection. Is a given graph acylic?
  * Assumes no self-loops or parallel edges
  */
 public class Cycle {

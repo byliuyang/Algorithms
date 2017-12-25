@@ -34,6 +34,7 @@ Java implementation of fundamental algorithms and data structures in Algorithm 4
     - Breadth First Paths
     - Connected Components
     - Cycle Detection
+    - Bipartite Graph Detection
     
 
 # Acknowledgement
