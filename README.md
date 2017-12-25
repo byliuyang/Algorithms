@@ -27,6 +27,14 @@ Java implementation of fundamental algorithms and data structures in Algorithm 4
 	- Hash Table
 		- Separate Chaining
 		- Linear Probing
+- Graph
+    - Adjacency List
+    - Depth First Search
+    - Depth First Paths
+    - Breadth First Paths
+    - Connected Components
+    - Cycle Detection
+    
 
 # Acknowledgement
 Thanks to authors of Algorithm 4th Edition for providing standard algorithm implementations
