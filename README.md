@@ -38,6 +38,7 @@ Java implementation of fundamental algorithms and data structures in Algorithm 4
     - Bipartite Graph Detection
     - Symbol Graph
     - Degree of Separation
+    - Directed Graph
 
 # Acknowledgement
 Thanks to authors of Algorithm 4th Edition for providing standard algorithm implementations
