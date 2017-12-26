@@ -35,7 +35,8 @@ Java implementation of fundamental algorithms and data structures in Algorithm 4
     - Connected Components
     - Cycle Detection
     - Bipartite Graph Detection
-    
+    - Symbol Graph
+    - Degree of Separation
 
 # Acknowledgement
 Thanks to authors of Algorithm 4th Edition for providing standard algorithm implementations
