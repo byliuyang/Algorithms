@@ -28,6 +28,7 @@ Java implementation of fundamental algorithms and data structures in Algorithm 4
 		- Separate Chaining
 		- Linear Probing
 - Graph
+    - Undirected Graph
     - Adjacency List
     - Depth First Search
     - Depth First Paths
