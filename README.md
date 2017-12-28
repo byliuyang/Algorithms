@@ -39,6 +39,7 @@ Java implementation of fundamental algorithms and data structures in Algorithm 4
     - Symbol Graph
     - Degree of Separation
     - Directed Graph
+    - Directed Depth First Search
 
 # Acknowledgement
 Thanks to authors of Algorithm 4th Edition for providing standard algorithm implementations
