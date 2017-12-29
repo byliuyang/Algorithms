@@ -13,15 +13,15 @@ public class Cycle {
 
     public Cycle(Graph G) {
         marked = new boolean[G.V()];
-        for(int s = 0; s < G.V(); s++)
-            if(!marked[s]) dfs(G, s, s);
+        for (int s = 0; s < G.V(); s++)
+            if (!marked[s]) dfs(G, s, s);
     }
 
     private void dfs(Graph G, int v, int u) {
         marked[v] = true;
-        for(int w: G.adj(v))
-            if(!marked[w]) dfs(G, w, v);
-            else if(w != u) hasCycle = true;
+        for (int w : G.adj(v))
+            if (!marked[w]) dfs(G, w, v);
+            else if (w != u) hasCycle = true;
     }
 
     public boolean hasCycle() {
@@ -32,7 +32,7 @@ public class Cycle {
         Graph G = new Graph(new In(args[0]));
         Cycle cycle = new Cycle(G);
 
-        if(cycle.hasCycle()) StdOut.print("HAS");
+        if (cycle.hasCycle()) StdOut.print("HAS");
         else StdOut.print("NO");
 
         StdOut.println(" cycle");

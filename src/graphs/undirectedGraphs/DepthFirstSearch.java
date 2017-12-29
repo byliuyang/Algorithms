@@ -16,8 +16,8 @@ public class DepthFirstSearch {
         marked[s] = true;
         count++;
 
-        for(int w: G.adj(s))
-            if(!marked[w]) dfs(G, w);
+        for (int w : G.adj(s))
+            if (!marked[w]) dfs(G, w);
     }
 
     public boolean marked(int v) {
@@ -37,7 +37,7 @@ public class DepthFirstSearch {
                 StdOut.print(v + " ");
         StdOut.println();
 
-        if(depthFirstSearch.count != G.V())
+        if (depthFirstSearch.count != G.V())
             StdOut.print("NOT ");
         StdOut.println(" connected");
     }

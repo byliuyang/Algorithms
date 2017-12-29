@@ -40,7 +40,7 @@ public class TwoColor {
         Graph G = new Graph(new In(args[0]));
         TwoColor twoColor = new TwoColor(G);
 
-        if(!twoColor.isTwoColorable()) StdOut.print("NOT ");
+        if (!twoColor.isTwoColorable()) StdOut.print("NOT ");
         StdOut.println("colorable");
     }
 }
