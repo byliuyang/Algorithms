@@ -4,12 +4,12 @@ import fundamentals.bagQueueStack.stack.Stack;
 import libs.In;
 import libs.StdOut;
 
-public class DepthFirstDirectedPath {
+public class DepthFirstDirectedPaths {
     private boolean marked[];
     private int source;
     private int[] parent;
 
-    DepthFirstDirectedPath(Digraph digraph, int source) {
+    DepthFirstDirectedPaths(Digraph digraph, int source) {
         marked = new boolean[digraph.V()];
         parent = new int[digraph.V()];
         this.source = source;
@@ -44,7 +44,7 @@ public class DepthFirstDirectedPath {
     public static void main(String[] args) {
         Digraph digraph = new Digraph(new In(args[0]));
         int s = Integer.parseInt(args[1]);
-        DepthFirstDirectedPath paths = new DepthFirstDirectedPath(digraph, s);
+        DepthFirstDirectedPaths paths = new DepthFirstDirectedPaths(digraph, s);
 
         for (int v = 0; v < digraph.V(); v++) {
             StdOut.print(s + " to " + v + ": ");
