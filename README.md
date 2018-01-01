@@ -43,6 +43,7 @@ Java implementation of fundamental algorithms and data structures in Algorithm 4
     - Directed Depth First Paths
     - Directed Breadth First Paths
     - Directed Cycle
+    - Depth First Order
 
 # Acknowledgement
 Thanks to authors of Algorithm 4th Edition for providing standard algorithm implementations
