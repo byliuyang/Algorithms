@@ -33,15 +33,15 @@ public class DepthFirstOrder {
         reversePost.push(vertex);
     }
 
-    private Iterable<Integer> pre() {
+    public Iterable<Integer> pre() {
         return pre;
     }
 
-    private Iterable<Integer> post() {
+    public Iterable<Integer> post() {
         return post;
     }
 
-    private Iterable<Integer> reversePost() {
+    public Iterable<Integer> reversePost() {
         return reversePost;
     }
 
