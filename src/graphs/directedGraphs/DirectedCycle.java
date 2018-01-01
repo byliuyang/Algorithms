@@ -16,7 +16,7 @@ public class DirectedCycle {
         onStack = new boolean[digraph.V()];
 
         for (int v = 0; v < digraph.V(); v++)
-            if (!marked[v]) dfs(digraph, v);
+            if (!marked[v] && !hasCycle()) dfs(digraph, v);
     }
 
     private void dfs(Digraph digraph, int vertex) {
@@ -27,7 +27,7 @@ public class DirectedCycle {
             else if (!marked[adjacent]) {
                 edgeTo[adjacent] = vertex;
                 dfs(digraph, adjacent);
-            } else {
+            } else if(onStack[adjacent]) {
                 cycle = new Stack<>();
                 for (int x = vertex; x != adjacent; x = edgeTo[x])
                     cycle.push(x);
