@@ -48,6 +48,7 @@ Java implementation of fundamental algorithms and data structures in Algorithm 4
     - Topological Sort
 - Strings
     - Alphabet
+    - Count
 
 # Acknowledgement
 Thanks to authors of Algorithm 4th Edition for providing standard algorithm implementations
