@@ -27,7 +27,7 @@ Java implementation of fundamental algorithms and data structures in Algorithm 4
 	- Hash Table
 		- Separate Chaining
 		- Linear Probing
-- Graph
+- Graphs
     - Undirected Graph
     - Adjacency List
     - Depth First Search
@@ -46,6 +46,8 @@ Java implementation of fundamental algorithms and data structures in Algorithm 4
     - Depth First Order
     - Symbol Digraph
     - Topological Sort
+- Strings
+    - Alphabet
 
 # Acknowledgement
 Thanks to authors of Algorithm 4th Edition for providing standard algorithm implementations
